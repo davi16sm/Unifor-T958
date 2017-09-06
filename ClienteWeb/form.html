@@ -42,9 +42,8 @@
                 <tr ng-repeat="livro in listaLivros">
                     <td>{{livro.isbn}}</td>
                     <td>{{livro.titulo}}</td>
-                    <td>
-                        <button class="btn btn-info" (click)="editar(livro)">Editar</button>
-                        <button class="btn btn-danger" (click)="excluir(livro)">Excluir</button>
+                    <td>                        
+                        <button class="btn btn-danger" ng-click="excluir(livro)">Excluir</button>
                     </td>
                 </tr>
             </table>
